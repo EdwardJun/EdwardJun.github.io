@@ -217,6 +217,7 @@ NexT.utils = NexT.$u = {
   },
 
   isMobile: function () {
+    console.log('222222')
     return window.screen.width < 767 && this.hasMobileUA();
   },
 
