@@ -79,17 +79,24 @@
 
 
 
-<meta name="description" content="从创建hexo到发布流程，创建文章、文章分类...  （注：以下是个人解决方法和搜集的资料）">
+<meta name="description" content="使用webpack 构建多入口项目，以下项目根据 vue 框架改造">
 <meta property="og:type" content="article">
-<meta property="og:title" content="创建Hexo 博客(createHexo)">
-<meta property="og:url" content="http://yoursite.com/2019/01/21/createHexo/index.html">
+<meta property="og:title" content="项目多入口配置 (multipleEntryApp)">
+<meta property="og:url" content="http://yoursite.com/2019/02/22/multipleEntryApp/index.html">
 <meta property="og:site_name" content="功法心得">
-<meta property="og:description" content="从创建hexo到发布流程，创建文章、文章分类...  （注：以下是个人解决方法和搜集的资料）">
+<meta property="og:description" content="使用webpack 构建多入口项目，以下项目根据 vue 框架改造">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-02-22T07:08:18.202Z">
+<meta property="og:image" content="http://note.youdao.com/yws/res/7394/WEBRESOURCEe6bda5e6b417cfacf79012f86d6a7c6a">
+<meta property="og:image" content="http://note.youdao.com/yws/res/7403/WEBRESOURCEf689e168841f05c505a9e542cde868bd">
+<meta property="og:image" content="http://note.youdao.com/yws/res/7408/WEBRESOURCE315fc52707a585cdabd6cba548906388">
+<meta property="og:image" content="http://note.youdao.com/yws/res/7411/WEBRESOURCE3ece9940c61d816a3f69c31032393435">
+<meta property="og:image" content="http://note.youdao.com/yws/res/7444/WEBRESOURCE82c1dec7ecf4e8dda839263838dadb3e">
+<meta property="og:image" content="http://note.youdao.com/yws/res/7448/WEBRESOURCE97626744e9ef8bd2518f0acbd08da0fe">
+<meta property="og:updated_time" content="2019-02-22T07:40:21.919Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="创建Hexo 博客(createHexo)">
-<meta name="twitter:description" content="从创建hexo到发布流程，创建文章、文章分类...  （注：以下是个人解决方法和搜集的资料）">
+<meta name="twitter:title" content="项目多入口配置 (multipleEntryApp)">
+<meta name="twitter:description" content="使用webpack 构建多入口项目，以下项目根据 vue 框架改造">
+<meta name="twitter:image" content="http://note.youdao.com/yws/res/7394/WEBRESOURCEe6bda5e6b417cfacf79012f86d6a7c6a">
 
 
 
@@ -119,13 +126,13 @@
 
 
 
-  <link rel="canonical" href="http://yoursite.com/2019/01/21/createHexo/">
+  <link rel="canonical" href="http://yoursite.com/2019/02/22/multipleEntryApp/">
 
 
 
 
 
-  <title>创建Hexo 博客(createHexo) | 功法心得</title>
+  <title>项目多入口配置 (multipleEntryApp) | 功法心得</title>
   
 
 
@@ -243,7 +250,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/21/createHexo/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/02/22/multipleEntryApp/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="EdwardJun">
@@ -260,7 +267,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">创建Hexo 博客(createHexo)</h1>
+          <h1 class="post-title" itemprop="name headline">项目多入口配置 (multipleEntryApp)</h1>
         
 
         <div class="post-meta">
@@ -272,8 +279,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-01-21T11:23:20+08:00">
-                2019-01-21
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-02-22T14:48:33+08:00">
+                2019-02-22
               </time>
             
 
@@ -295,8 +302,8 @@
               
               
                 <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing">
-                  <a href="/categories/整理知识点/" itemprop="url" rel="index">
-                    <span itemprop="name">整理知识点</span>
+                  <a href="/categories/webpack/" itemprop="url" rel="index">
+                    <span itemprop="name">webpack</span>
                   </a>
                 </span>
 
@@ -319,7 +326,7 @@
 
           
               <div class="post-description">
-                  从创建hexo到发布流程，创建文章、文章分类...  （注：以下是个人解决方法和搜集的资料）
+                  使用webpack 构建多入口项目，以下项目根据 vue 框架改造
               </div>
           
 
@@ -337,9 +344,29 @@
 
       
         <a id="more"></a>
-<h5 id="1-如何创建hexo-博客"><a href="#1-如何创建hexo-博客" class="headerlink" title="1. 如何创建hexo 博客"></a>1. 如何创建hexo 博客</h5>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">教程一： https://mp.weixin.qq.com/s/69isJE191WV2gaVbjrwTtw</span><br><span class="line">教程二： https://mp.weixin.qq.com/s/JFhh5zU4cI26-NlOlApncA</span><br></pre></td></tr></table></figure>
-<h5 id="2-讲解搭建过程会遇到的问题"><a href="#2-讲解搭建过程会遇到的问题" class="headerlink" title="2. 讲解搭建过程会遇到的问题"></a>2. 讲解搭建过程会遇到的问题</h5>  <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br></pre></td><td class="code"><pre><span class="line">1. 如何切换主题</span><br><span class="line">  git clone https://github.com/iissnan/hexo-theme-next themes/next</span><br><span class="line">  【https://github.com/iissnan/hexo-theme-next】 github 地址</span><br><span class="line">  【themes/next】 本地存储的文件夹路径</span><br><span class="line"></span><br><span class="line">2. 添加动态背景</span><br><span class="line">   案例： https://blog.csdn.net/LemonXQ/article/details/78578650</span><br><span class="line"></span><br><span class="line">3. 自动刷新</span><br><span class="line">   案例： http://moxfive.xyz/2016/03/27/hexo-browsersync/</span><br><span class="line"></span><br><span class="line">4. 设置阅读全文</span><br><span class="line">   案例： https://www.jianshu.com/p/78c218f9d1e7</span><br><span class="line">   </span><br><span class="line">5. 常用命令</span><br><span class="line">    hexo new post &quot;文章名&quot; :   新建文章</span><br><span class="line">    hexo new page 文件     :   新建页(新建目录)</span><br><span class="line">    hexo c                :   清除public 下的编译文件</span><br><span class="line">    hexo g                :   自动将md文件，生成静态html、css文件</span><br><span class="line">    hexo s                :   启动本地服务</span><br><span class="line">    hexo d                :   上传代码到git</span><br><span class="line"></span><br><span class="line">6. 创建分类</span><br><span class="line">   案例： https://linlif.github.io/2017/05/27/Hexo%E4%BD%BF%E7%94%A8%E6%94%BB%E7%95%A5-%E6%B7%BB%E5%8A%A0%E5%88%86%E7%B1%BB%E5%8F%8A%E6%A0%87%E7%AD%BE/</span><br></pre></td></tr></table></figure>
-<p>相关链接<br>  案例： <a href="http://rosesnow.top/" target="_blank" rel="noopener">http://rosesnow.top/</a><br>  案例： <a href="https://mp.weixin.qq.com/s/8-rjj2CCsh59qhRyps6ZDg" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/8-rjj2CCsh59qhRyps6ZDg</a><br>  教程一： <a href="https://mp.weixin.qq.com/s/69isJE191WV2gaVbjrwTtw" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/69isJE191WV2gaVbjrwTtw</a><br>  教程二： <a href="https://mp.weixin.qq.com/s/JFhh5zU4cI26-NlOlApncA" target="_blank" rel="noopener">https://mp.weixin.qq.com/s/JFhh5zU4cI26-NlOlApncA</a><br>  hexo 主题网页： <a href="https://hexo.io/themes/" target="_blank" rel="noopener">https://hexo.io/themes/</a><br>  主题 next 搭建的教程： <a href="http://theme-next.iissnan.com/getting-started.html#select-scheme" target="_blank" rel="noopener">http://theme-next.iissnan.com/getting-started.html#select-scheme</a><br>  图标网站： <a href="https://fontawesome.com/?from=io" target="_blank" rel="noopener">https://fontawesome.com/?from=io</a><br>  图床案例： <a href="https://www.zhihu.com/question/21667151" target="_blank" rel="noopener">https://www.zhihu.com/question/21667151</a><br>  案例： <a href="https://hexo.io/zh-cn/docs/configuration" target="_blank" rel="noopener">https://hexo.io/zh-cn/docs/configuration</a><br>  案例： <a href="https://zhuanlan.zhihu.com/p/26625249" target="_blank" rel="noopener">https://zhuanlan.zhihu.com/p/26625249</a><br>  七牛云文档： <a href="https://developer.qiniu.com/kodo/manual/1233/console-quickstart" target="_blank" rel="noopener">https://developer.qiniu.com/kodo/manual/1233/console-quickstart</a></p>
+<h5 id="1-文件结构如下"><a href="#1-文件结构如下" class="headerlink" title="1. 文件结构如下"></a>1. 文件结构如下</h5><div style="width: 500px; text-align: left;"><img src="http://note.youdao.com/yws/res/7394/WEBRESOURCEe6bda5e6b417cfacf79012f86d6a7c6a" alt="Alt text"></div>
+
+<h5 id="2-进行多页面配置"><a href="#2-进行多页面配置" class="headerlink" title="2. 进行多页面配置"></a>2. 进行多页面配置</h5><h6 id="修改-entry-入口"><a href="#修改-entry-入口" class="headerlink" title="|- 修改 entry 入口"></a>|- 修改 entry 入口</h6><div style="width: 500px; text-align: left;"><img src="http://note.youdao.com/yws/res/7403/WEBRESOURCEf689e168841f05c505a9e542cde868bd" alt="Alt text"></div>
+
+<h6 id="修改-output-出口"><a href="#修改-output-出口" class="headerlink" title="|- 修改 output 出口"></a>|- 修改 output 出口</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dev 环境的出口配置</span><br></pre></td></tr></table></figure>
+<div style="width: 500px; text-align: left;"><img src="http://note.youdao.com/yws/res/7408/WEBRESOURCE315fc52707a585cdabd6cba548906388" alt="Alt text"></div>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">build 环境的出口配置</span><br></pre></td></tr></table></figure>
+<div style="width: 500px; text-align: left;"><img src="http://note.youdao.com/yws/res/7411/WEBRESOURCE3ece9940c61d816a3f69c31032393435" alt="Alt text"></div>
+
+<h6 id="修改生成的-html-插件"><a href="#修改生成的-html-插件" class="headerlink" title="|- 修改生成的 html 插件"></a>|- 修改生成的 html 插件</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">dev 环境的配置</span><br></pre></td></tr></table></figure>
+<div style="width: 500px; text-align: left;"><img src="http://note.youdao.com/yws/res/7444/WEBRESOURCE82c1dec7ecf4e8dda839263838dadb3e" alt="Alt text"></div>
+
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">build 环境的配置</span><br></pre></td></tr></table></figure>
+<div style="width: 500px; text-align: left;"><img src="http://note.youdao.com/yws/res/7448/WEBRESOURCE97626744e9ef8bd2518f0acbd08da0fe" alt="Alt text"></div>
+
+<h6 id="可以进行打包优化-（不是必须配置）"><a href="#可以进行打包优化-（不是必须配置）" class="headerlink" title="可以进行打包优化 （不是必须配置）"></a>可以进行打包优化 （不是必须配置）</h6><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line">optimization: &#123;</span><br><span class="line">    //分隔代码块</span><br><span class="line">    splitChunks: &#123;</span><br><span class="line">      cacheGroups: &#123; // 缓存组</span><br><span class="line">        common: &#123; // 公共的模块，多页面应用才需要抽离次模块</span><br><span class="line">          chunks: &apos;initial&apos;, // 从入口开始抽取</span><br><span class="line">          minSize: 0,</span><br><span class="line">          minChunks: 2</span><br><span class="line">        &#125;,</span><br><span class="line">        vendor: &#123;</span><br><span class="line">          priority: 1,</span><br><span class="line">          test: /node_modules/,</span><br><span class="line">          chunks: &apos;initial&apos;, // 从入口开始抽取</span><br><span class="line">          minSize: 0,</span><br><span class="line">          minChunks: 2</span><br><span class="line">        &#125;</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;,</span><br></pre></td></tr></table></figure>
+<h5 id="相关链接"><a href="#相关链接" class="headerlink" title="相关链接"></a>相关链接</h5><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">多入口配置</span><br></pre></td></tr></table></figure>
+<p>  <a href="https://blog.csdn.net/zfeng816/article/details/79806783" target="_blank" rel="noopener">https://blog.csdn.net/zfeng816/article/details/79806783</a><br>  <a href="https://blog.csdn.net/localhost_1314/article/details/84330374" target="_blank" rel="noopener">https://blog.csdn.net/localhost_1314/article/details/84330374</a><br>  <a href="https://www.cnblogs.com/jasonwang2y60/p/9247283.html" target="_blank" rel="noopener">https://www.cnblogs.com/jasonwang2y60/p/9247283.html</a><br>  <a href="https://www.jianshu.com/p/75ae1015341d" target="_blank" rel="noopener">https://www.jianshu.com/p/75ae1015341d</a><br>  <a href="https://blog.csdn.net/stiven_lu/article/details/80271012" target="_blank" rel="noopener">https://blog.csdn.net/stiven_lu/article/details/80271012</a><br>  <a href="https://github.com/Jasonwang911/numtller/blob/master/src/router/inlay.router.js" target="_blank" rel="noopener">https://github.com/Jasonwang911/numtller/blob/master/src/router/inlay.router.js</a><br>  <a href="https://juejin.im/entry/5bc7cf5e5188255730585517" target="_blank" rel="noopener">https://juejin.im/entry/5bc7cf5e5188255730585517</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">vue 多页面跳转</span><br></pre></td></tr></table></figure>
+<p><a href="https://blog.csdn.net/wangxinxin1992816/article/details/81097550" target="_blank" rel="noopener">https://blog.csdn.net/wangxinxin1992816/article/details/81097550</a></p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">github 项目地址</span><br></pre></td></tr></table></figure>
+<p><a href="https://github.com/EdwardJun/webpackTest2/tree/test" target="_blank" rel="noopener">https://github.com/EdwardJun/webpackTest2/tree/test</a></p>
 
       
     </div>
@@ -364,15 +391,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2019/01/21/createHexo/" rel="next" title="创建Hexo 博客(createHexo)">
+                <i class="fa fa-chevron-left"></i> 创建Hexo 博客(createHexo)
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/02/22/multipleEntryApp/" rel="prev" title="项目多入口配置 (multipleEntryApp)">
-                项目多入口配置 (multipleEntryApp) <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -497,7 +524,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-如何创建hexo-博客"><span class="nav-number">1.</span> <span class="nav-text">1. 如何创建hexo 博客</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-讲解搭建过程会遇到的问题"><span class="nav-number">2.</span> <span class="nav-text">2. 讲解搭建过程会遇到的问题</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-5"><a class="nav-link" href="#1-文件结构如下"><span class="nav-number">1.</span> <span class="nav-text">1. 文件结构如下</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#2-进行多页面配置"><span class="nav-number">2.</span> <span class="nav-text">2. 进行多页面配置</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#修改-entry-入口"><span class="nav-number">2.1.</span> <span class="nav-text">|- 修改 entry 入口</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#修改-output-出口"><span class="nav-number">2.2.</span> <span class="nav-text">|- 修改 output 出口</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#修改生成的-html-插件"><span class="nav-number">2.3.</span> <span class="nav-text">|- 修改生成的 html 插件</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#可以进行打包优化-（不是必须配置）"><span class="nav-number">2.4.</span> <span class="nav-text">可以进行打包优化 （不是必须配置）</span></a></li></ol></li><li class="nav-item nav-level-5"><a class="nav-link" href="#相关链接"><span class="nav-number">3.</span> <span class="nav-text">相关链接</span></a></li></ol></div>
             
 
           </div>
